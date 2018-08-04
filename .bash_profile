@@ -13,6 +13,7 @@ source ~/.dotfiles/git-completion.bash
 GIT_PS1_SHOWUPSTREAM="auto"
 
 source ~/.dotfiles/.bash_aliases
+source ~/.dotfiles/.bash_aliases_secret
 source ~/.dotfiles/.bash_prompt
 
 export EDITOR="atom"
