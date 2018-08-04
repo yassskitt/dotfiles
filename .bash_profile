@@ -1,10 +1,18 @@
-eval "$(rbenv init -)"
-
 export PATH="~/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:$PATH"
 
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+eval "$(rbenv init -)"
+
+[ -f `brew --prefix`/etc/profile.d/autojump.sh ] && . `brew --prefix`/etc/profile.d/autojump.sh
+
+[ -f `brew --prefix`/etc/bash_completion ] && . `brew --prefix`/etc/bash_completion
+
+
+source ~/.dotfiles/git-prompt.sh
+source ~/.dotfiles/git-completion.bash
+
+GIT_PS1_SHOWUPSTREAM="auto"
 
 source ~/.dotfiles/.bash_aliases
 source ~/.dotfiles/.bash_prompt
-source ~/.dotfiles/git-prompt.sh
-source ~/.dotfiles/git-completion.bash
+
+export EDITOR="atom"
