@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function mv_dotfile() {
+  mv ~/.$1 ~/dotfiles/$1
+  echo "ln -s -f -v ~/dotfiles/$1 ~/.$1" >> ~/dotfiles/init
+  source ~/dotfiles/init
+}
+
+ln -s -f -v ~/.dotfiles/vim ~/.vim
+ln -s -f -v ~/.dotfiles/vimrc ~/.vimrc
+ln -s -f -v ~/dotfiles/vimrc ~/.vimrc.after
+ln -s -f -v ~/dotfiles/bash_profile ~/.bash_profile
+ln -s -f -v ~/dotfiles/gitconfig ~/.gitconfig

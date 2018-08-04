@@ -1,0 +1,21 @@
+set nohlsearch
+
+set guioptions-=r
+set guioptions-=u
+set go-=L
+
+set timeoutlen=275
+
+set guicursor+=n-v-c:blinkwait0
+
+color molokai
+set guifont=Monaco:h18
+
+"Remaps ctrl-w to space, ctrl-w is window mode, yo
+nnoremap <space> <c-w>
+
+" Close the NERDTree on file open
+let NERDTreeQuitOnOpen = 1
+
+" Open nerdtree on current file
+nnoremap ,n :NERDTreeFind<CR>
