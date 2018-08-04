@@ -6,14 +6,15 @@ eval "$(rbenv init -)"
 
 [ -f `brew --prefix`/etc/bash_completion ] && . `brew --prefix`/etc/bash_completion
 
+source ~/dotfiles/init
 
-source ~/.dotfiles/git-prompt.sh
-source ~/.dotfiles/git-completion.bash
+source ~/dotfiles/git-prompt.sh
+source ~/dotfiles/git-completion.bash
 
 GIT_PS1_SHOWUPSTREAM="auto"
 
-source ~/.dotfiles/.bash_aliases
-source ~/.dotfiles/.bash_aliases_secret
-source ~/.dotfiles/.bash_prompt
+source ~/dotfiles/bash_aliases
+source ~/dotfiles/bash_aliases_secret
+source ~/dotfiles/bash_prompt
 
 export EDITOR="atom"

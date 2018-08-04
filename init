@@ -6,8 +6,8 @@ function mv_dotfile() {
   source ~/dotfiles/init
 }
 
-ln -s -f -v ~/.dotfiles/vim ~/.vim
-ln -s -f -v ~/.dotfiles/vimrc ~/.vimrc
+ln -s -f -v ~/dotfiles/vim ~/.vim
+ln -s -f -v ~/dotfiles/vimrc ~/.vimrc
 ln -s -f -v ~/dotfiles/vimrc ~/.vimrc.after
 ln -s -f -v ~/dotfiles/bash_profile ~/.bash_profile
 ln -s -f -v ~/dotfiles/gitconfig ~/.gitconfig

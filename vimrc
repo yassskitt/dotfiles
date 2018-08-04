@@ -23,7 +23,7 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
+set rtp+=~/dotfiles/vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'kien/ctrlp.vim'
