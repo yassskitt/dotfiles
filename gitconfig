@@ -12,3 +12,13 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	s = status -s
+  mustash = stash -u
+	sweep = diff master --name-status --color -- app/
+	pr = pull-request
+[color]
+	ui = true
+[core]
+	editor = vim

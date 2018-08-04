@@ -2,7 +2,7 @@
 alias gpu='git push -u origin'
 alias gpr='hub pull-request'
 alias gb='git branch'
-alias gs='git status'
+alias gs='git s'
 alias gf='git fetch'
 alias gd='git diff -w --patience'
 alias gds='git diff --staged'
