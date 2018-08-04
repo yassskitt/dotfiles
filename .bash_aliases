@@ -4,13 +4,16 @@ alias gpr='hub pull-request'
 alias gb='git branch'
 alias gs='git status'
 alias gf='git fetch'
-alias gd='git diff'
+alias gd='git diff -w --patience'
 alias gds='git diff --staged'
+alias gdm='git diff master'
+alias gdo='git diff --name-only | xargs atom'
 alias gc='git checkout'
 alias gcm='git commit -m'
-alias git-delete-merged='git checkout master && git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias att='git commit -am' # All the things!
-alias gdo='gd --name-only | xargs atom'
+alias gl='git log'
+alias gll='git log --pretty=short -u -L'
+alias git-delete-merged='git checkout master && git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias todos='git grep -n --context 3 TODO'
 alias mergester='git checkout master && git pull && git checkout - && git merge --no-edit master'
 
@@ -23,3 +26,7 @@ alias fix-postgres="rm /usr/local/var/postgres/postmaster.pid"
 
 # server Aliases
 alias ssh-copykey='pbcopy < ~/.ssh/id_rsa.pub'
+
+alias tower='gittower'
+
+alias ssh_list='cat ~/.ssh/config | grep "Host " | sed "s/Host//g"'
