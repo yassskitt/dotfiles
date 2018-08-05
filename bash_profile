@@ -6,8 +6,6 @@ eval "$(rbenv init -)"
 
 [ -f `brew --prefix`/etc/bash_completion ] && . `brew --prefix`/etc/bash_completion
 
-source ~/dotfiles/init
-
 source ~/dotfiles/git-prompt.sh
 source ~/dotfiles/git-completion.bash
 
