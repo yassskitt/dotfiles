@@ -14,6 +14,7 @@
 	required = true
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lg = log --color --pretty=format:'%Cred%h%Creset - %s %Cgreen(%ar)%Creset %an'
 	s = status -s
   mustash = stash -u
 	sweep = diff master --name-status --color -- app/
