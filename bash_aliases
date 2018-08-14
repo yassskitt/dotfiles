@@ -1,6 +1,5 @@
-# git amend
-alias gad='GIT_COMMITTER_DATE="`date -R`" git commit --amend --no-edit --date "`date -R`"'
-alias gae='git commit -am'
+# git add
+alias gad='git add .'
 
 # git branch
 alias gb='git branch'
@@ -9,6 +8,8 @@ alias gb='git branch'
 alias gco='git checkout'
 
 # git commit
+alias gcd='GIT_COMMITTER_DATE="`date -R`" git commit --amend --no-edit --date "`date -R`"'
+alias gce='git commit -am'
 alias gcm='git commit -m'
 alias gcv='git commit -v'
 
