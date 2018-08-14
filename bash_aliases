@@ -3,9 +3,11 @@ alias gad='git add .'
 
 # git branch
 alias gb='git branch'
+__git_complete gb _git_branch
 
 # git checkout
 alias gco='git checkout'
+__git_complete gco _git_checkout
 
 # git commit
 alias gcd='GIT_COMMITTER_DATE="`date -R`" git commit --amend --no-edit --date "`date -R`"'
@@ -15,6 +17,7 @@ alias gcv='git commit -v'
 
 # git diff
 alias gd='git d'
+__git_complete gd _git_diff
 alias gdm='git d master...`git rev-parse --abbrev-ref HEAD`'
 alias gds='git d --staged'
 alias gdo='git d --name-only | xargs atom'
@@ -32,6 +35,7 @@ alias gpu='git push -u origin'
 
 # git status
 alias gs='git s'
+__git_complete gs _git_status
 
 # git tools
 alias git-delete-merged='git checkout master && git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
