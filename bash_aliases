@@ -27,6 +27,7 @@ alias glm='git lg master..`git rev-parse --abbrev-ref HEAD`'
 alias gll='git log --pretty=short -u -L'
 
 # git push
+alias gp='git push'
 alias gpu='git push -u origin'
 
 # git status
