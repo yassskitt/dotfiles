@@ -15,4 +15,4 @@ source ~/dotfiles/bash_aliases
 source ~/dotfiles/bash_aliases_secret
 source ~/dotfiles/bash_prompt
 
-export EDITOR="atom"
+export EDITOR="code"
